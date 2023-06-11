@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSLight
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int receptionTime = 10;
+            int amountOfQueue;
+            int timeQueueInHours;
+            int timeQueueInMinutes;
+
+            Console.WriteLine($"Добро пожаловать в поликлинику! " +
+                $"Время приёма одного пациента составляет {receptionTime} минут.");
+            Console.Write("Сколько старушек в очереди?");
+            amountOfQueue = Convert.ToInt32(Console.ReadLine());
+
+            timeQueueInHours = (receptionTime * amountOfQueue) / 60;
+            timeQueueInMinutes = (receptionTime * amountOfQueue) % 60;
+
+            Console.WriteLine($"Вы должны стоять в очереди {timeQueueInHours} " +
+                $"часов и {timeQueueInMinutes} минут.");
+        }
+    }
+}
