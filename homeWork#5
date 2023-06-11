@@ -12,13 +12,15 @@ namespace CSLight
         {
             string firstName = "Сакутин";
             string lastName = "Роман";
-
+            string swapName;
+            
             Console.WriteLine($"Имя: {firstName}, Фамилия: {lastName}.");
 
-            string correctFirstName = lastName;
-            string correctLastName = firstName;
-
-            Console.WriteLine($"Но на самом деле имя: {correctFirstName}, а фамилия: {correctLastName}.");
+            swapName = firstName;
+            firstName = lastName;
+            lastName = swapName;
+            
+            Console.WriteLine($"Но на самом деле имя: {firstName}, а фамилия: {lastName}.");
         }
     }
 }
