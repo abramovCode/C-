@@ -11,7 +11,7 @@ namespace CSLight
         static void Main(string[] args)
         {
             int amountOfGold;
-            int amountOfCrystall;
+            int amountOfCrystalls;
             int crystallUnitPrice = 10;
 
             Console.WriteLine($"Добро пожаловать в магазин кристаллов! Цена одного " +
@@ -19,10 +19,10 @@ namespace CSLight
             Console.Write("Сколько у Вас золота?");
             amountOfGold = Convert.ToInt32(Console.ReadLine());
             Console.Write("Сколько кристаллов Вам необходимо?");
-            amountOfCrystall = Convert.ToInt32(Console.ReadLine());
+            amountOfCrystalls = Convert.ToInt32(Console.ReadLine());
 
-            amountOfGold -= amountOfCrystall * crystallUnitPrice;
-            Console.WriteLine($"Теперь у вас {amountOfCrystall} кристаллов и {amountOfGold} золота.");
+            amountOfGold -= amountOfCrystalls * crystallUnitPrice;
+            Console.WriteLine($"Теперь у вас {amountOfCrystalls} кристаллов и {amountOfGold} золота.");
         }
     }
 }
