@@ -11,16 +11,15 @@ namespace CSLight
         static void Main(string[] args)
         {
             int amountOfMoney;
-            int userNumber;
             float patientsTemperature;
-            double piValue;
+            double numberPi;
             string userMessage;
             char driverCategory;
-            bool userAccess;
+            bool haveAccess;
             byte transparency;
+            sbyte numberOfWeek;
             short vehiclePower;
             long distanceToTheMoon;
-
         }
     }
 }
