@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSLight
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int picturesInAlbum = 52;
+            int amountPicturesInRow = 3;
+
+            int amountFullRows = picturesInAlbum / amountPicturesInRow;
+            int picturesBeyondMeasure = picturesInAlbum % amountPicturesInRow;
+
+            Console.WriteLine($"Полностью заполненых рядов с картинками: {amountFullRows}, " +
+                $"Количество картинок сверх меры: {picturesBeyondMeasure}.");
+        }
+    }
+}
